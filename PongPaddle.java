@@ -13,7 +13,7 @@ public class PongPaddle
     }
     public int getBottomY()
     {
-        return y-height;
+        return y+height-1;
     }
     public int getTopY()
     {
@@ -25,14 +25,14 @@ public class PongPaddle
     }
     public int getRightX()
     {
-        return x+width;
+        return x+width-1;
     }
     public void moveDown(int d)
     {
-        y -= d;
+        y += d;
     }
     public void moveUp(int d)
     {
-        y += d;
+        y -= d;
     }
 }
